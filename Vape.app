@@ -798,7 +798,7 @@ function lib:Window(text, preset, closebind)
             )
             game:GetService("UserInputService").InputChanged:Connect(
                 function(input)
-                    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+                    if dragging and input.UserInputType == Enum.UserInputType.Touch then
                         move(input)
                     end
                 end
